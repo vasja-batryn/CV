@@ -1,0 +1,54 @@
+.link {
+  padding: 20px 84px;
+  color: #000000;
+  font-size: $text-font;
+  font-weight: 500;
+  line-height: 19px;
+}
+
+.big-header {
+  margin-bottom: 20px;
+  font-size: $big-header;
+  color: #000000;
+  font-weight: 500;
+  line-height: 234px;
+  //line
+  padding-bottom: 10px;
+  background-image: linear-gradient(#000000, #000000);
+  background-size: 40% 2px;
+  background-position: bottom left;
+  background-repeat: no-repeat;
+}
+
+.header {
+  color: #000000;
+  font-size: $header-font;
+  font-weight: 500;
+  line-height: 38px;
+  &_span {
+    color: #cfcfcf;
+  }
+  &_second {
+    font-size: $header-font2;
+  }
+}
+
+.paragraph {
+  color: #a3a3a3;
+  font-size: $text-font;
+  line-height: 19px;
+  &_second {
+    font-size: $text-font2;
+    line-height: 28px;
+    text-align: justify;
+    //line
+    padding-bottom: 50px;
+    background-image: linear-gradient(#000000, #000000);
+    background-size: 40% 1.5px;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+}

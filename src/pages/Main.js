@@ -1,10 +1,17 @@
+import React from 'react';
+import TypeWriterEffect from 'react-typewriter-effect';
+import Carousel from '../components/Carousel';
+
 export const Main = () => {
   return (
     <main>
       <div className="container mx-auto wrapper wrapper_centered full-page">
         <div className="wrapper justify-evenly ">
           <div className="text-block w-2/5">
-            <h2 className="big-header">Hello</h2>
+            {/* <h2 className="big-header">Hello</h2> */}
+            <h2 className="big-header">
+              <TypeWriterEffect text="Hello" typeSpeed={500} startDelay={100} />
+            </h2>
             <h1 className="header">
               <span className="header header_span">I’m </span>Vasja Batryn
             </h1>
@@ -40,6 +47,9 @@ export const Main = () => {
               at mi dapibus, non egestas dui ullamcorper.
             </p>
           </div>
+        </div>
+        <div className="carousel-container">
+          <Carousel />
         </div>
       </div>
     </main>

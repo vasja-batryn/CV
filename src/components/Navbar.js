@@ -15,7 +15,7 @@ export const Navbar = () => {
       <div className="menu_inner">
         <Link to="/" className="mobile-logo"><img src={Logo} alt="Logo" /></Link>
         <nav ref={ref} className="nav">
-          <Link to="/" className="link"onClick={show}>Home</Link>
+          <Link to="/blog" className="link" onClick={show}>Blog</Link>
           <Link to="/about" className="link" onClick={show}>About Me</Link>
           <Link to="/" className="desctop-logo px-8" onClick={show}><img src={Logo} alt="Logo" /></Link>
           <Link to="/projects" className="link" onClick={show}>Projects</Link>

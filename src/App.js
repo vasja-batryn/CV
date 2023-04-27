@@ -11,12 +11,16 @@ import { About } from './pages/About.js';
 import { Projects } from './pages/Projects.js';
 import { Error } from './pages/Error';
 import { Navbar } from './components/Navbar';
+import { Blog } from './components/Blog';
+
+
 
 function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path="/" element={<Root />}>
         <Route index element={<Main />} />
+        <Route path="/blog" element={<Blog />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="*" element={<Error />} />

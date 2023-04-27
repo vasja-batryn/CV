@@ -1,0 +1,11 @@
+.blog_block {
+    width: 100%;
+    min-height: 200px;
+    margin: 20px 0;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: center;
+    border-bottom: 2px solid black ;
+}

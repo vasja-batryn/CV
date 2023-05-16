@@ -11,9 +11,8 @@ import { About } from './pages/About.js';
 import { Projects } from './pages/Projects.js';
 import { Error } from './pages/Error';
 import { Navbar } from './components/Navbar';
-import { Blog } from './components/Blog';
-
-
+import { Blog } from './pages/Blog';
+import { Contacts } from './pages/Contacts';
 
 function App() {
   const router = createBrowserRouter(
@@ -23,6 +22,7 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/contacts" element={<Contacts />} />
         <Route path="*" element={<Error />} />
       </Route>
     )

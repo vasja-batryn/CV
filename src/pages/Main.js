@@ -7,6 +7,7 @@ import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
 
 export const Main = () => {
+  
   return (
     <Splide
       className=""
@@ -62,7 +63,7 @@ export const Main = () => {
         </div>
       </SplideSlide>
 
-      <SplideSlide className="wrapper wrapper_centered carousel-container h-screen">
+      <SplideSlide className="wrapper wrapper_centered  h-screen">
         <Carousel />
       </SplideSlide>
 

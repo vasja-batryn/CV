@@ -11,7 +11,7 @@
   font-size: $big-header;
   color: #000000;
   font-weight: 400;
-  
+
   //line
   padding-bottom: 10px;
   background-image: linear-gradient(#000000, #000000);
@@ -34,9 +34,9 @@
     font-size: $header-font2;
   }
 
-  &_alt{
+  &_alt {
     font-size: 8rem;
-    &_white{
+    &_white {
       color: white;
     }
   }
@@ -44,10 +44,10 @@
 
 .paragraph {
   color: #a3a3a3;
-  font-size: 1rem;
+  font-size: $text-font;
   line-height: 19px;
   &_second {
-    font-size: 1.5rem;
+    font-size: $text-font2;
     line-height: 28px;
     text-align: justify;
     //line
@@ -57,8 +57,8 @@
     background-position: bottom right;
     background-repeat: no-repeat;
   }
-  &_third{
-    font-size: 1.5rem;
+  &_third {
+    font-size: $text-font2;
     line-height: 28px;
     text-align: justify;
     color: #000000;
@@ -80,12 +80,25 @@
   background-repeat: no-repeat;
 }
 
-.simple-title{
+.simple-title {
   font-size: $text-font2;
 }
 
 @media only screen and (max-width: 1024px) {
   .big-header {
     font-size: 8rem;
+  }
+
+  .paragraph {
+    &_second {
+      font-size: $text-font;
+    }
+    &_third {
+      font-size: $text-font;
+    }
+  }
+
+  .header {
+    font-size: $text-font2;
   }
 }

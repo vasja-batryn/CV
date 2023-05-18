@@ -16,7 +16,6 @@ export const Projects = () => {
       setProjects(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
     }
     getProjects();
-    console.log(projects);
   }, []);
 
   return (
@@ -34,7 +33,7 @@ export const Projects = () => {
         <SplideSlide className="wrapper wrapper_centered">
           <h2 className="header header_alt">PROJECTS</h2>
         </SplideSlide>
-        <SplideSlide className="wrapper justify-around mt-10">
+        <SplideSlide className="grid">
           {projects.map((project) => (
             <div key={project.id}>
               <div

@@ -1,21 +1,25 @@
 .my_photo {
-    width: 260px;
-    height: 260px;
-    border-radius: 50%;
-    background: url('../img/myphoto.jpg');
-    background-repeat: no-repeat;
-    background-position: top 30% center;
-    background-size: cover;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background: url('../img/myphoto.jpg');
+  background-repeat: no-repeat;
+  background-position: top 30% center;
+  background-size: cover;
 }
 
 .card {
-    min-height: 330px;
-    max-width: 360px;
-    width: 100%;
-    margin: 5px;
-    padding: 50px 30px;
-    border: 2px solid black;
-    &_content {
+  min-height: 330px;
+  max-width: 360px;
+  width: 100%;
+  margin: 5px;
+  padding: 50px 30px;
+  border: 2px solid black;
+}
 
-    }
+.list {
+  list-style: square inside;
+  li {
+    margin: 5px auto;
+  }
 }

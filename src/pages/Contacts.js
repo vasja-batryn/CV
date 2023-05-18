@@ -2,30 +2,37 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { db } from '../firebase-config';
 import { addDoc, collection } from 'firebase/firestore';
-import githubIcon from '../img/github.svg'
-import telegramIcon from '../img/telegram.svg'
-import linkedin from '../img/linkedIN.svg'
-
+import githubIcon from '../img/github.svg';
+import telegramIcon from '../img/telegram.svg';
+import linkedin from '../img/linkedIN.svg';
 
 export const Contacts = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const [err, setErr] = useState('');
 
   const clientCollectionRef = collection(db, 'clients');
 
   const navigate = useNavigate();
 
   const handleClick = async (e) => {
-    try {
-      await addDoc(clientCollectionRef, {
-        name: name,
-        email: email,
-        message: message,
-      });
-      navigate('/');
-    } catch (err) {
-      console.log(err);
+    if (name === null || name.trim() === '') {
+      setErr('Please enter your name');
+    } else if (email === null || email.trim() === '') {
+      setErr('Please enter your email');
+    } else {
+      setErr('');
+      try {
+        await addDoc(clientCollectionRef, {
+          name: name,
+          email: email,
+          message: message,
+        });
+        navigate('/');
+      } catch (err) {
+        console.log(err);
+      }
     }
   };
 
@@ -67,15 +74,26 @@ export const Contacts = () => {
             rows="4"
           />
         </div>
+        {err && <span className="text-red-500 mb-5">{err}</span>}
         <button className="btn" onClick={handleClick}>
           SEND
         </button>
-        <div className='wrapper justify-evenly w-full my-10'>
-          <a href='https://github.com/vasja-batryn' target='_blank' rel="noreferrer"><img src={githubIcon} alt='icon'/></a>
-          <a href='https://t.me/vasja_batryn' target='_blank' rel="noreferrer"><img src={telegramIcon} alt='icon'/></a>
-          <a href='#' target='_blank' rel="noreferrer"><img src={linkedin} alt='icon'/></a>
+        <div className="wrapper justify-evenly w-full my-10">
+          <a
+            href="https://github.com/vasja-batryn"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={githubIcon} alt="icon" />
+          </a>
+          <a href="https://t.me/vasja_batryn" target="_blank" rel="noreferrer">
+            <img src={telegramIcon} alt="icon" />
+          </a>
+          <a href="#" target="_blank" rel="noreferrer">
+            <img src={linkedin} alt="icon" />
+          </a>
         </div>
       </div>
     </div>
   );
-}
+};

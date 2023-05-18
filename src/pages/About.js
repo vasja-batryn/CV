@@ -44,10 +44,7 @@ export const About = () => {
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
               tincidunt nibh mollis, tempor dolor id, venenatis ex. Aenean
-              convallis tellus id purus posuere aliquet. Fusce quis imperdiet
-              libero. Nullam nec massa bibendum, laoreet est eu, aliquet elit.
-              Pellentesque malesuada volutpat lacinia. Maecenas euismod lectus
-              at mi dapibus, non egestas dui ullamcorper.
+              convallis tellus id purus posuere aliquet. 
             </p>
           </div>
         </div>
@@ -55,28 +52,26 @@ export const About = () => {
         <div className="card my-10">
           <div className="card_content">
             <h4 className="header text-center mb-5">Skills</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-              tincidunt nibh mollis, tempor dolor id, venenatis ex. Aenean
-              convallis tellus id purus posuere aliquet. Fusce quis imperdiet
-              libero. Nullam nec massa bibendum, laoreet est eu, aliquet elit.
-              Pellentesque malesuada volutpat lacinia. Maecenas euismod lectus
-              at mi dapibus, non egestas dui ullamcorper.
-            </p>
+            <ul className='list'>
+              <li>First skill here</li>
+              <li>Second skill here</li>
+              <li>Third skill here</li>
+              <li>Fourth skill here</li>
+              <li>Fifth skill here</li>
+            </ul>
           </div>
         </div>
 
         <div className="card my-10">
           <div className="card_content">
             <h4 className="header text-center mb-5">Languages</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-              tincidunt nibh mollis, tempor dolor id, venenatis ex. Aenean
-              convallis tellus id purus posuere aliquet. Fusce quis imperdiet
-              libero. Nullam nec massa bibendum, laoreet est eu, aliquet elit.
-              Pellentesque malesuada volutpat lacinia. Maecenas euismod lectus
-              at mi dapibus, non egestas dui ullamcorper.
-            </p>
+            <ul className='list'>
+              <li>English - B1</li>
+              <li>Ukrainian - native</li>
+              <li>Third skill here</li>
+              <li>Fourth skill here</li>
+              <li>Fifth skill here</li>
+            </ul>
           </div>
         </div>
       </main>

@@ -13,7 +13,7 @@ export const Blog = () => {
     }
 
     getPosts();
-  }, [posts]);
+  }, []);
 
   return (
     <div className="wrapper wrapper_centered flex-col container mx-auto">
@@ -21,7 +21,7 @@ export const Blog = () => {
         MY <span className="header header_second header_span">BLOG</span>
       </h3>
 
-      {posts.map((post) => (
+      {posts.reverse().map((post) => (
         <div key={post.id} className="blog_block">
           <div className="blog_block_text">
             <h3 className="header mt-10">{post.title}</h3>

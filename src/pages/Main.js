@@ -3,6 +3,11 @@ import TypeWriterEffect from 'react-typewriter-effect';
 import { Carousel } from '../components/Carousel';
 import { BlockDesc } from '../components/BlockDesc';
 import icon1 from '../img/icon-1.svg';
+import icon2 from '../img/icon-2.svg';
+import icon3 from '../img/icon-3.svg';
+import icon4 from '../img/icon-4.svg';
+import icon5 from '../img/icon-5.svg';
+import icon6 from '../img/icon-6.svg';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
 
@@ -67,15 +72,15 @@ export const Main = () => {
         <Carousel />
       </SplideSlide>
 
-      <SplideSlide className="wrapper justify-around">
+      <SplideSlide className="grid">
         {/* maping here  */}
         <BlockDesc image={icon1} title="Creative Design" />
-        <BlockDesc image={icon1} title="Creative Design" />
-        <BlockDesc image={icon1} title="Creative Design" />
+        <BlockDesc image={icon2} title="Brending" />
+        <BlockDesc image={icon3} title="User Interface" />
 
-        <BlockDesc image={icon1} title="Creative Design" />
-        <BlockDesc image={icon1} title="Creative Design" />
-        <BlockDesc image={icon1} title="Creative Design" />
+        <BlockDesc image={icon4} title="User experience" />
+        <BlockDesc image={icon5} title="UI / UX Design" />
+        <BlockDesc image={icon6} title="Fast Support" />
       </SplideSlide>
     </Splide>
   );
